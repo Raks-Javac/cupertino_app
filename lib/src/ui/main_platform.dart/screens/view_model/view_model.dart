@@ -51,7 +51,6 @@ class CupertinoScreenViewModel extends BaseViewModel {
     } else {
       enableButton(true);
     }
-    notifyListeners();
 
     log("$userheight and $userweight and $buttonStatus");
   }
