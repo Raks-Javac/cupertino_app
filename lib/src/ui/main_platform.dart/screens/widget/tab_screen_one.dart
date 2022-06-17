@@ -61,7 +61,7 @@ class CupertinoTabScreenOne extends StatelessWidget {
                   ),
                   const Expanded(child: UIHelper.verticalSpaceSmall),
                   CupertinoButton.filled(
-                      child: const Text("Calculate"), onPressed: () {}),
+                      child: const Text("Calculate BMI"), onPressed: () {}),
                   UIHelper.verticalSpaceMedium,
                 ],
               ),
