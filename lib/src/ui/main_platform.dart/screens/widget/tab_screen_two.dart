@@ -1,5 +1,6 @@
 import 'package:estate_project/src/core/base/base_view/b_view.dart';
 import 'package:estate_project/src/ui/main_platform.dart/screens/view_model/view_model.dart';
+import 'package:estate_project/src/ui/shared/cupertino_reusables/app_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ class CupertinoTabScreenTwo extends StatelessWidget {
 
   Widget _buildScreen(
       BuildContext context, CupertinoScreenViewModel viewModel) {
-    return CupertinoPageScaffold(child: Container());
+    return CupertinoPageScaffold(
+        navigationBar: returnCupertinoAppBar("Settings"), child: Container());
   }
 }

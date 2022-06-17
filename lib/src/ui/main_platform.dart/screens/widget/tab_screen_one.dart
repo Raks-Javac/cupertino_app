@@ -1,6 +1,7 @@
 import 'package:estate_project/src/core/base/base_view/b_view.dart';
 import 'package:estate_project/src/core/utils/styles.dart';
 import 'package:estate_project/src/ui/main_platform.dart/screens/view_model/view_model.dart';
+import 'package:estate_project/src/ui/shared/cupertino_reusables/app_bar.dart';
 import 'package:estate_project/src/ui/shared/loaders/network_image_err.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -20,11 +21,7 @@ class CupertinoTabScreenOne extends StatelessWidget {
   Widget _buildScreen(
       BuildContext context, CupertinoScreenViewModel viewModel) {
     return CupertinoPageScaffold(
-        navigationBar: const CupertinoNavigationBar(
-          middle: Text(
-            "Home",
-          ),
-        ),
+        navigationBar: returnCupertinoAppBar("Home"),
         child: SafeArea(
           child: SingleChildScrollView(
             child: ConstrainedBox(
