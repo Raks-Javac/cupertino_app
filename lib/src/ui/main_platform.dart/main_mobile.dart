@@ -6,7 +6,7 @@ import 'package:estate_project/src/core/utils/styles.dart';
 import 'package:estate_project/src/locator.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
-import 'screens/cupertino_home.dart';
+import 'screens/cupertino_tab_home.dart';
 
 class CupertinoProviderApp extends StatefulWidget {
   final List<SingleChildWidget> multiProvider;

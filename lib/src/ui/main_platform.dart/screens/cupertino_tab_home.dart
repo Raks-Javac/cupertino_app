@@ -8,13 +8,14 @@ class CupertinoHomeScreen extends StatelessWidget {
   const CupertinoHomeScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return BaseView<FirstScreenViewModel>(
-      vmBuilder: (context) => FirstScreenViewModel(context: context),
+    return BaseView<CupertinoScreenViewModel>(
+      vmBuilder: (context) => CupertinoScreenViewModel(context: context),
       builder: _buildScreen,
     );
   }
 
-  Widget _buildScreen(BuildContext context, FirstScreenViewModel viewModel) {
+  Widget _buildScreen(
+      BuildContext context, CupertinoScreenViewModel viewModel) {
     return CupertinoTabScaffold(
         tabBar: CupertinoTabBar(items: [
           BottomNavigationBarItem(
