@@ -1,13 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:estate_project/src/core/utils/constants.dart';
 
 class ThemeHandler {
-  static ThemeData get lightMode {
-    return ThemeData(
+  static CupertinoThemeData get lightMode {
+    return CupertinoThemeData(
       primaryColor: ColorsTexStyleStore.kAppMainColor,
-      primaryColorLight: ColorsTexStyleStore.kTriviaLightYellow,
-      colorScheme: ColorScheme.fromSwatch().copyWith(
-          secondary: ColorsTexStyleStore.kTriviaLightYellow.withOpacity(0.3)),
     );
   }
 }

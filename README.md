@@ -1,3 +1,7 @@
-# architect_flutter_network_services 
+# cupertino_app
 
-a flutter project demonstrating a couple of tips on how to make api calls the right way
+A simple flutter app that demonstrates Cupertino widgets made for iOS
+
+- CupertinoTabScaffold
+
+- CupertinoPageScaffold
