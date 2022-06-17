@@ -1,6 +1,7 @@
 import 'package:estate_project/src/core/base/base_view/b_view.dart';
 import 'package:estate_project/src/core/utils/styles.dart';
 import 'package:estate_project/src/ui/main_platform.dart/screens/view_model/view_model.dart';
+import 'package:estate_project/src/ui/main_platform.dart/screens/widget/tab_screen_one.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +33,7 @@ class CupertinoHomeScreen extends StatelessWidget {
               label: "Settings"),
         ]),
         tabBuilder: (context, index) {
-          return Container();
+          return const CupertinoTabScreenOne();
         });
   }
 }
