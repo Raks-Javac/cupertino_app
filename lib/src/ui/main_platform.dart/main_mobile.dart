@@ -23,6 +23,9 @@ class _CupertinoProviderAppState extends State<CupertinoProviderApp> {
     return MultiProvider(
       providers: allProviders,
       child: CupertinoApp(
+        localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
+          DefaultMaterialLocalizations.delegate,
+        ],
         color: ColorsTexStyleStore.kAppMainColor,
         navigatorKey: getIt<NavigationService>().navigationKey,
         debugShowCheckedModeBanner: false,

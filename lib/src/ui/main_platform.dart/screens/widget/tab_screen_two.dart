@@ -7,7 +7,6 @@ import 'package:estate_project/src/ui/shared/loaders/network_image_err.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
 class CupertinoTabScreenTwo extends StatelessWidget {
   const CupertinoTabScreenTwo({Key? key}) : super(key: key);
   @override

@@ -8,7 +8,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CupertinoTabScreenOne extends StatelessWidget {
-  const CupertinoTabScreenOne({Key? key}) : super(key: key);
+  final TextEditingController _weight = TextEditingController();
+  final TextEditingController _height = TextEditingController();
+
+  CupertinoTabScreenOne({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return BaseView<CupertinoScreenViewModel>(
@@ -37,27 +40,43 @@ class CupertinoTabScreenOne extends StatelessWidget {
                   ),
                   UIHelper.verticalSpaceMedium,
                   Row(
-                    children: const [
+                    children: [
                       UIHelper.horizontalSpaceSmall,
-                      Text("Height"),
+                      const Text("Height(inches)"),
                       UIHelper.horizontalSpaceSmall,
-                      Expanded(child: CupertinoTextField()),
+                      Expanded(
+                          child: CupertinoTextField(
+                              controller: _height,
+                              onChanged: (value) {
+                                viewModel.updateUserHeight(value);
+                              })),
                       UIHelper.horizontalSpaceSmall,
                     ],
                   ),
                   UIHelper.verticalSpaceMedium,
                   Row(
-                    children: const [
+                    children: [
                       UIHelper.horizontalSpaceSmall,
-                      Text("Weight"),
+                      const Text("Weight(kg)"),
                       UIHelper.horizontalSpaceSmall,
-                      Expanded(child: CupertinoTextField()),
+                      Expanded(
+                          child: CupertinoTextField(
+                        controller: _weight,
+                        onChanged: (value) {
+                          viewModel.updateUserWeight(value);
+                        },
+                      )),
                       UIHelper.horizontalSpaceSmall,
                     ],
                   ),
                   const Expanded(child: UIHelper.verticalSpaceSmall),
                   CupertinoButton.filled(
-                      child: const Text("Calculate BMI"), onPressed: () {}),
+                      child: const Text("Calculate BMI"),
+                      onPressed: viewModel.buttonStatus
+                          ? () {
+                              viewModel.calculateBMIResult();
+                            }
+                          : null),
                   UIHelper.verticalSpaceMedium,
                 ],
               ),

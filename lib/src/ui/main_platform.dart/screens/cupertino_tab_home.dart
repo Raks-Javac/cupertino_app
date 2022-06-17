@@ -35,7 +35,7 @@ class CupertinoHomeScreen extends StatelessWidget {
         ]),
         tabBuilder: (context, index) {
           if (index == 0) {
-            return const CupertinoTabScreenOne();
+            return CupertinoTabScreenOne();
           } else {
             return const CupertinoTabScreenTwo();
           }
