@@ -79,7 +79,7 @@ class CupertinoScreenViewModel extends BaseViewModel {
 
     displayCupertinoDialog(
       dialogTitle: "BMI Calculator",
-      dialogContent: "The result of BMI is $_resultDisplayed",
+      dialogContent: "The result of BMI is $_resultDisplayed kg/m2",
       context: context,
     );
   }
