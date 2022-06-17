@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:estate_project/src/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class ConstantsStore {}
@@ -46,3 +47,14 @@ class ColorsTexStyleStore {
   static const Color kTriviaRed = Color(0xFFB80016);
   static const Color kTriviaTransparentColor = Colors.transparent;
 }
+
+const String settingsImageUrl = "https://bit.ly/3NVKdix";
+Map<int, Widget> children(BuildContext context) => {
+      0: Text(
+        "Decimal",
+        style: TextStyle(fontSize: screenAwareSize(22, context)),
+      ),
+      1: Text("Imperal",
+          style: TextStyle(fontSize: screenAwareSize(22, context))),
+    };
+const String imageUrl = "https://bit.ly/3MVXeap";

@@ -1,12 +1,11 @@
 import 'package:estate_project/src/core/base/base_view/b_view.dart';
+import 'package:estate_project/src/core/utils/constants.dart';
 import 'package:estate_project/src/core/utils/styles.dart';
 import 'package:estate_project/src/ui/main_platform.dart/screens/view_model/view_model.dart';
 import 'package:estate_project/src/ui/shared/cupertino_reusables/app_bar.dart';
 import 'package:estate_project/src/ui/shared/loaders/network_image_err.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-const String imageUrl = "https://bit.ly/3MVXeap";
 
 class CupertinoTabScreenOne extends StatelessWidget {
   const CupertinoTabScreenOne({Key? key}) : super(key: key);

@@ -21,6 +21,11 @@ class CupertinoScreenViewModel extends BaseViewModel {
 
   @override
   FutureOr<void> disposeState() {}
+  int segMentSate = 0;
+  updateSegmanet(int value) {
+    segMentSate = value;
+    notifyListeners();
+  }
 
   @override
   FutureOr<void> initState() {}
