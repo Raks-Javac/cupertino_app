@@ -4,7 +4,7 @@ import 'package:estate_project/src/core/utils/constants.dart';
 
 class ThemeHandler {
   static CupertinoThemeData get lightMode {
-    return CupertinoThemeData(
+    return const CupertinoThemeData(
       primaryColor: ColorsTexStyleStore.kAppMainColor,
     );
   }

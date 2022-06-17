@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:estate_project/src/core/base/base_view/b_view.dart';
 import 'package:estate_project/src/core/utils/styles.dart';
 import 'package:estate_project/src/ui/main_platform.dart/screens/view_model/view_model.dart';
